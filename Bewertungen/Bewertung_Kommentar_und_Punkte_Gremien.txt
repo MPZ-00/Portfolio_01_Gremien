@@ -1,0 +1,41 @@
+Prätzlich/Gremien
+
+ERD: 14/40 => 35% => 25 von 70P 
+
+Es existiert ein Kommentar zu den gemachten Verbesserungen
+
+
+Kommentar1: Picholwski/Fahrradwerkstatt
+erkannt:
+- die Kardinalitäten der Relation "benötigt" sind ( 0; N )
+
+nicht erkannt:
+- die anderen Kardinalitäten sind nicht alle richtig
+  => ein Kunde hat mehrere ( 0; N ) Räder; ein Rad gehört genau einem Kunden
+  => eine Reparatur wird von genau EINEM Angestellten gemacht
+- es fehlt das Attribut "FertigstellungsDatum" bei "Reparatur(Auftrag)"
+- bei "benötigt" fehlt noch das Attribute "Anzahl"
+- Datum gehört nicht zur Entity Fahrrad, sondern zu "Reparatur(Auftrag)"
+
+=> 11/15
+
+
+Kommentar2: Stroppel/MatheAufgaben
+erkannt:
+- nicht jede Aufgabe hat "Punkte"
+
+nicht erkannt:
+- es fehlt die Klassenunterteilung von "Aufgabe" in "Klausur-" und "Programmieraufgabe"
+- "Einträger" ist nicht nötig - es reicht das normale Attribut "Verfasser" bei der Entity "Aufgabe"
+- "ListeSchlüsselwerte" wird nicht als eigene Entity dargestellt - das kann man auch daran erkennen, 
+  das keine Attribute vorhanden sind
+- das Attribut "Reihenfolge" gehört zur Relation, nicht zur Entity "Aufgabenblatt"
+- "Synonyme" ist ein mehrwertiges Attribut
+
+falsch korrigiert:
+- die Relation "bezieht sich auf" ist richtig dargestellt
+
+=> 9/15 => 20 / 30P
+
+==>> 25 + 20 = 45 / 100 Punkte
+

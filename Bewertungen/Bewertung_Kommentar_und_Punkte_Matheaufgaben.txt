@@ -1,0 +1,43 @@
+Kondybko/Rad-Wegweiser
+
+ERD: 28/34 => 82% => 58 von 70P 
+
+Es existiert ein Kommentar zu den gemachten Verbesserungen
+
+
+Kommentar1: Picholwski/Fahrradwerkstatt
+erkannt:
+- die Kardinalitäten der Relation "benötigt" sind ( 0; N )
+- es fehlt das Attribut "FertigstellungsDatum" bei "Reparatur(Auftrag)"
+- bei "benötigt" fehlen noch die Attribute "Anzahl" und evtl "Nachbestellen"
+
+nicht erkannt:
+- die Kardinalitäten sind nicht alle richtig
+  => ein Kunde hat mehrere ( 0; N ) Räder; ein Rad gehört genau einem Kunden
+  => eine Reparatur wird von genau EINEM Angestellten gemacht
+
+falsch korrigiert:
+- Datum gehört nicht zur Entity Fahrrad, sondern zu "Reparatur(Auftrag)"
+
+=> 13/15
+
+
+Kommentar2: Stroppel/MatheAufgaben
+erkannt:
+- nicht jede Aufgabe hat "Punkte" => es fehlt die Klassenunterteilung von "Aufgabe" in 
+  "Klausur-" und "Programmieraufgabe"
+- die Relation "bezieht sich auf" ist richtig dargestellt
+- "ListeSchlüsselwerte" wird nicht als eigene Entity dargestellt - das kann man auch daran erkennen, 
+  das keine Attribute vorhanden sind
+- "Synonyme" ist ein mehrwertiges Attribut
+
+nicht erkannt:
+- das Attribut "Reihenfolge" gehört zur Relation, nicht zur Entity "Aufgabenblatt"
+
+falsch korrigiert:
+- "Einträger" ist nicht nötig - es reicht das normale Attribut "Verfasser" bei der Entity "Aufgabe"
+
+=> 13/15 => 26 / 30P
+
+==>> 58 + 26 = 84 / 100 Punkte
+

@@ -1,0 +1,39 @@
+Stroppel/MatheAufgaben
+
+ERD: 24/27 => 89% => 62 von 70P 
+
+Es existiert ein Kommentar zu den gemachten Verbesserungen
+
+
+Kommentar1: Gremien/Prätzlich
+erkannt:
+- "Adresse" ist kein mehrwertiges Attribut
+- die Darstellung des ERD ist nicht korrekt - keine (min;max)-Schreibweise; unterschiedliche Darstellung der
+  Relationen usw....
+- die vorhandenen Notationen sind nicht alle korrekt
+- das mehrwertige Attribut "Aufgabengebiete" der "Gremien" fehlt
+- es fehlt die Entity "Antrag" mit den entspr. Relationen
+- es fehlt die Entity "Dokument" mit den entspr. Relationen
+- es fehlen weitere Attribute z.B. bei "Gremien", bei "Sitzung"
+
+nicht erkannt:
+- es fehlt die Relation "Person" - "führt Protokoll bei" - "Sitzung"
+
+=> 14/15
+
+
+Kommentar2:Kondybko/Rad-Wegweiser
+erkannt:
+- "Foto" - "gehört zu" - "Standort" kann als ( 1; 2 )-Relation dargestellt werden
+- es fehlt die Entity "Gemeide" => "ist zuständig für" - "Standort"
+- "Kommentar" wird als extra Entity mit eigenen Attributen dargestellt -> "Kommentar" - "gehört zu" - "Standort"
+
+falsch korrigiert:
+- "Wegweiser" kann als abstrakte Oberklasse dargestellt werden, da "Wegweiser" an sich nicht vorkommt, es gibt
+  entweder "Haupt-" oder "Zwischenwegweiser"
+- "Pfeilrichtung" ist nicht mehrwertig, sondern entweder "links", oder "rechts"....
+
+=> 13/15 => 27 / 30P
+
+==>> 62 + 27 = 89 / 100 Punkte
+

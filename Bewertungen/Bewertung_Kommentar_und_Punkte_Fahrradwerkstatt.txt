@@ -1,0 +1,41 @@
+Pilchowski/Fahrradwerkstatt
+
+ERD: 19/22 => 86% => 60 von 70P 
+
+Es existiert ein Kommentar zu den gemachten Verbesserungen
+
+
+Kommentar1: Gremien/Prätzlich
+erkannt:
+- "Adresse" ist kein mehrwertiges Attribut
+- die Darstellung des ERD ist nicht korrekt - keine (min;max)-Schreibweise; unterschiedliche Darstellung der
+  Relationen usw....
+- die vorhandenen Notationen sind nicht alle korrekt
+- das mehrwertige Attribut "Augabengebiete" der "Gremien" fehlt
+- es fehlt die Entity "Antrag" mit den entspr. Relationen
+- es fehlt die Entity "Dokument" mit den entspr. Relationen
+
+nicht erkannt:
+- es fehlen weitere Attribute z.B. bei "Gremien", bei "Sitzung"...., ausserdem fehlt die Relation "Person" - 
+  "führt Protokoll bei" - "Sitzung"
+
+=> 14/15
+
+
+Kommentar2: Kondybko/Rad-Wegweiser
+erkannt:
+- "Foto" - "gehört zu" - "Standort" kann als ( 1; 2 )-Relation dargestellt werden
+
+nicht erkannt:
+- es fehlt die Entity "Gemeide" => "ist zuständig für" - "Standort"
+- "Kommentar" wird als extra Entity mit eigenen Attributen dargestellt -> "Kommentar" - "gehört zu" - "Standort"
+
+falsch korrigiert:
+- "Wegweiser" kann als abstrakte Oberklasse dargestellt werden, da "Wegweiser" an sich nicht vorkommt, es gibt
+  entweder "Haupt-" oder "Zwischenwegweiser"
+- ein "Wegweiser" kann nur an EINEM "Standort" stehen, ein "Standort" kann aber mehrere "Wegweiser" haben
+
+=> 11/15 => 25 / 30P
+
+==>> 60 + 25 = 85 / 100 Punkte
+
